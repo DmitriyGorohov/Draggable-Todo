@@ -1,38 +1,51 @@
-.App {
-  text-align: center;
+.wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	min-height: 100vh;
+	background-color: #222222;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+input {
+	height: 30px;
+	width: 250px;
+	border: none;
+	border-bottom: 1px solid whitesmoke;
+	background: none;
+	color: white;
+	padding: 0 10px;
+	outline: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.enter {
+	width: 100px;
+	height: 30px;
+	font-size: 12px;
+	background: none;
+	border: 1px solid whitesmoke;
+	color: whitesmoke;
+	margin-left: 10px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.enter:hover {
+	background-color: whitesmoke;
+	color: #222222;
+	cursor: pointer;
 }
-
-.App-link {
-  color: #61dafb;
+.todo__item {
+	position: absolute;
+	cursor: move;
+	min-width: 215px;
+	color: black;
+	padding: 1em;
+	border-radius: 5px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.delete {
+	position: absolute;
+	right: 5px;
+	top: 5px;
+	background: none;
+	border: none;
+}
+.delete:hover {
+	color: red;
+	cursor: pointer;
 }
